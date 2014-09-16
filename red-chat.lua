@@ -48,7 +48,7 @@ function ProcessInput()
         if (text == "$listCurrentUsers") then
             term.clear()
             term.write("List of known users:\n")
-            for index, name in users do
+            for index, name in pairs(users) do
                 term.write(name .. "\n")
             end
         elseif text == "exit" then
