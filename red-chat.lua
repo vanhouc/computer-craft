@@ -31,7 +31,6 @@ function HandleMessages()
                     rednet.broadcast("$user:" .. name)
                 end
             else
-                term.write(text .. "/n")
                 monitor.write(text)
                 cX, cY = monitor.getCursorPos()
                 monitor.setCursorPos(1, cY + 1)
